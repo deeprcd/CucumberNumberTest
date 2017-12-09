@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = { "pretty", "html:target/cucumber" },
+        plugin = { "pretty", "json:target/cucumber.json" },
         glue = "com.bdd.numbers.steps",
         features = "src/test/resources/features"
 )
